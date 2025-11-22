@@ -23,7 +23,7 @@ document.addEventListener('dblclick', function (event) {
     // Use a relative path if the image is on the same domain.
     if (imgSrc.startsWith(baseUrl)) {
       const url = new URL(imgSrc)
-      imgSrc = `${url.pathname}{${url.search}`
+      imgSrc = `${url.pathname}${url.search}`
     }
 
     // 1. Create Popup Elements

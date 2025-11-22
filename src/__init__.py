@@ -21,9 +21,8 @@
 # License: GNU AGPL, version 3 or later;
 # See http://www.gnu.org/licenses/agpl.html
 
-from aqt.editor import Editor
-from anki.hooks import wrap
-from aqt.utils import askUser
+from aqt import gui_hooks
+from aqt import mw
 
 from .utils import openChangelog
 from .utils.JSEval import execJSFile
@@ -31,11 +30,9 @@ from .utils import uuid  # duplicate UUID checked here
 from .utils import debugLog  # debug log registered here
 
 
-def onLoadNote(self, focusTo=None):
-    # main.min.j should be loaded only once
-    execJSFile(self.web, "js/main.min.js", once=True)
-    execJSFile(self.web, "js/main.min.js", once=True)
-    execJSFile(self.web, "js/main.min.js", once=True)
+def injectJS(_card):
+    execJSFile(mw.web, "js/main.min.js", once=True)
 
 
-Editor.loadNote = wrap(Editor.loadNote, onLoadNote, "after")
+gui_hooks.reviewer_did_show_question.append(injectJS)
+gui_hooks.reviewer_did_show_answer.append(injectJS)

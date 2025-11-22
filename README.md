@@ -1,9 +1,9 @@
-# Addon template
+# Image Zoom Popup
 
-[![Donate via patreon](https://img.shields.io/badge/patreon-donate-green.svg)](https://www.patreon.com/trgk)
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/trgk)
 
-Template for my addons. Currently it supports...
+![example usage](./docsimg/desc.gif)
 
-- npm + typescript + webpack setup for bundling JS codes.
+Double click image to enlarge on reviewer.
 
-This repo serves as a template repo for most of my addons.
+> Example card from [Anking Step Deck](https://www.ankihub.net/step-deck). Check out.

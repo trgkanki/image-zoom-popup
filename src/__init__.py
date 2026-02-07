@@ -15,7 +15,7 @@
 
 # -*- coding: utf-8 -*-
 #
-# image-zoom-popup v20.5.4i8
+# image v26.2.7i146
 #
 # Copyright: trgk (phu54321@naver.com)
 # License: GNU AGPL, version 3 or later;

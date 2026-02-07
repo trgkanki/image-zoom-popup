@@ -1,6 +1,6 @@
 {
   "name": "image-zoom-popup",
-  "version": "20.5.4i8",
+  "version": "26.2.7i146",
   "description": "template for trgkanki's addon",
   "scripts": {
     "postinstall": "echo \"Make sure to install pipx on your environment! (npx analogue for python)\"",
